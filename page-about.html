@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Timeline - How it Works</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <!-- Fonts Google Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Aos Scroll Link -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Aos Scroll Link -->
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="/styles/page-about.css">
+</head>
+
+<body class="h-auto">
+  <header>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top bg-custom">
+
+      <div class="w-100 d-flex align-items-center justify-content-between justify-content-lg-around px-4 px-lg-5">
+        <!-- Logo -->
+        <a class="navbar-brand logo" href="/">
+          <img src="./assets/Images/logo.png" alt="">
+        </a>
+        <!-- Btn togle -->
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Sidebar -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <!-- Sidebar Header -->
+          <div class="offcanvas-header">
+            <a class="navbar-brand logo-mobile" href="#">
+              <img src="./assets/Images/logo.png" alt="">
+            </a>
+            <button type="button" class="btn-close shadow-none border-0" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <!-- Sidebar Body -->
+          <div
+            class="offcanvas-body d-flex flex-column align-items-start justify-content-around flex-lg-row justify-content-lg-center">
+            <ul
+              class="navbar-nav align-items-start justify-content-start justify-content-lg-end fs-5 flex-grow-1 pe-3 gap-2 gap-lg-0">
+              <li class="nav-item mx-xl-1 px-xl-2 text-nav-link fw-semibold">
+                <a class="fs-6 nav-link text-black" aria-current="page" href="/">Início</a>
+              </li>
+              <li class="nav-item mx-xl-1 px-xl-2 text-nav-link fw-semibold">
+                <a class="fs-6 nav-link text-black" href="./index.html#about">Sobre</a>
+              </li>
+              <li class="nav-item mx-xl-1 px-xl-2 text-nav-link fw-semibold">
+                <a class="fs-6 nav-link text-black" href="./index.html#partnerships">Parcerias</a>
+              </li>
+              <li class="nav-item mx-xl-1 px-xl-2 text-nav-link fw-semibold">
+                <a class="fs-6 nav-link text-black" href="./index.html#achievements">Realizações</a>
+              </li>
+              <li class="nav-item mx-xl-1 px-xl-2 text-nav-link fw-semibold">
+                <a class="fs-6 nav-link text-black" href="./index.html#facilities">Instalações Físicas</a>
+              </li>
+              <li class="nav-item mx-xl-1 px-xl-2 text-nav-link fw-semibold">
+                <a class="fs-6 nav-link text-black" href="#contacts">Contatos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </nav>
+    <!-- NavBar End-->
+  </header>
+  <!-- End Header  -->
+
+  <section class="w-100 hero mb-5">
+    <img src="./assets/Images/image-banner.jpg" alt="">
+    <div class="d-flex flex-column align-items-center justify-content-center">
+      <p class="text-white fs-5 fw-semibold">
+        <a class="text-white fs-5 fw-semibold" href="#">
+          Home
+        </a> | Nossa História
+      </p>
+      <h1 class="text-white fw-bold">Nossa História</h1>
+    </div>
+  </section>
+
+  <section class="section-about d-flex align-items-center justify-content-center">
+    <div class="container">
+      <div class="row row-gap-2 d-flex align-items-center">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+          <div class="d-flex flex-column align-items-start justify-content-center">
+            <p class="m-0 subtitle">- Nossa História</p>
+            <h2 class="fw-bold fs-2">Um Pouco sobre Nós</h2>
+            <p class="mb-2" style="font-size: 0.875rem;">
+              Acreditamos que a educação, a inovação e o trabalho em equipe são fundamentais para transformar
+              realidades.
+              Nosso compromisso vai além da teoria, promovendo a aplicação do conhecimento na prática e criando impacto
+              positivo na comunidade.
+            </p>
+            <p class="mb-4" style="font-size: 0.875rem;">
+              Com parcerias estratégicas, incentivamos a participação ativa de estudantes, proporcionando experiências
+              enriquecedoras e aproximando-os de desafios reais. Nossa jornada inclui iniciativas voltadas para a
+              sustentabilidade, tecnologia e aprendizado coletivo, sempre buscando novas formas de contribuir para o
+              desenvolvimento educacional e social.
+            </p>
+          </div>
+
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+          <div class="w-100 container-image">
+            <img src="./assets/Images/historico.jpeg" alt="historico">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section timeline Start -->
+  <section class="d-flex align-items-center justify-content-center p-3">
+    <div class="h-auto container container-timeline py-4 rounded">
+      <h2 class="text-center my-5 fw-bold">Nossa Linha do Tempo</h2>
+      <div class="timeline">
+        <div class="timeline-step">
+          <div class="timeline-content" data-aos="fade-right" data-aos-duration="1000">
+            <div class="timeline-number">2016 e 2017</div>
+            <h1 class="timeline-title">
+              Estudo da Área, Engajamento dos <br> Alunos e Eventos Acadêmicos
+            </h1>
+            <p class="timeline-text mt-2">
+              Nos primeiros anos, realizamos visitas à escola para estudar a área de cultivo e discutir as propostas com
+              os alunos,e tivemos aulas com arduíno. Participamos também da Semana de integração acadêmica (SIAC)
+              organizada pela UFRJ e participamos
+              na Siac 2017 e 2017
+            </p>
+          </div>
+          <div class="timeline-icon"><i class="bi bi-calendar-check"></i></div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+            <div class="timeline-number">2018</div>
+            <h1 class="timeline-title">
+              Expansão do Projeto: Poço, Energia Solar e <br> Parceria com a Fazenda das Águas
+            </h1>
+            <p class="timeline-text mt-2">
+              Entre 2018 e 2019, foram realizados a perfuração do poço, a instalação de equipamentos, como painéis
+              fotovoltaicos, e a parceria com o projeto 'Fazenda das Águas'. Além disso, abordamos temas como uso de
+              pesticidas e estação meteorológica com os alunos.
+            </p>
+          </div>
+          <div class="timeline-icon"><i class="bi bi-hospital"></i></div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-content" data-aos="fade-right" data-aos-duration="1000">
+            <div class="timeline-number">2019</div>
+            <h1 class="timeline-title">
+              Reconhecimento e Engajamento: Participação na SIAC 2019 com Menção Honrosa
+            </h1>
+            <p class="timeline-text mt-2">
+              Em 2019, participamos novamente da SIAC, desta vez com a presença dos alunos da escola, e recebemos uma
+              menção honrosa
+            </p>
+          </div>
+          <div class="timeline-icon"><i class="bi bi-person-check"></i></div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+            <div class="timeline-number">2020 e 2021</div>
+            <h1 class="timeline-title">
+              Avanços e Desafios: Desenvolvimento da Estação Meteorológica e Impactos da
+              Pandemia
+            </h1>
+            <p class="timeline-text">
+              Durante as férias, membros do projeto se reuniram para discutir o progresso da
+              estação meteorológica e realizar testes com sensores para Arduino. No entanto, devido à pandemia de
+              Covid-19, as atividades presenciais foram interrompidas.
+            </p>
+          </div>
+          <div class="timeline-icon"><i class="bi bi-clipboard-heart"></i></div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="timeline-content" data-aos="fade-right" data-aos-duration="1000">
+            <div class="timeline-number">Atualmente</div>
+            <div class="timeline-title">
+              Lançamento do Site: Divulgação e Compartilhamento dos Resultados do Projeto
+            </div>
+            <div class="timeline-text mt-2">
+              Criamos este site para divulgar o projeto e servir como um banco de dados, disponibilizando os resultados
+              dos anos de trabalho para a sociedade e a comunidade acadêmica
+            </div>
+          </div>
+          <div class="timeline-icon"><i class="bi bi-cash"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section timeline end -->
+
+  <!-- Start section Equipe  -->
+  <section class="section-equipe d-flex align-items-center justify-content-center mt-5">
+    <div class="container d-flex flex-column align-items-center gap-5">
+      <div class="row d-flex mb-4 align-items-center">
+        <div class="col-lg-6 order-3 order-lg-1" data-aos="fade-right" data-aos-duration="1000">
+          <div class="w-100 container-image-equipe mt-5 mt-lg-0">
+            <img src="./assets/Images/historico.jpeg" alt="historico">
+          </div>
+        </div>
+
+        <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-duration="1000">
+          <div class="d-flex flex-column align-items-start justify-content-center">
+            <p class="m-0 subtitle">- Equipe</p>
+            <h2>Nossa Equipe</h2>
+            <p>
+              Atualmente a equipe é composta por oito integrantes, todos alunos da engenharia de diferentes fases da
+              graduação e o professor coordenador do projeto é o Prof. Rafael Malheiro da Engenharia Civil UFRJ/Macaé
+              <br><br>
+              Para melhor organizar as atividades, os integrantes foram divididos em três grupos: Computação e sensores,
+              dimensionamento e extensão. Abaixo veremos as responsabilidades de cada um e alguns exemplos de atividades
+              desenvolvidas:
+            </p>
+          </div>
+        </div>
+
+        <div class="row order-lg-3 mt-5">
+          <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="d-flex flex-column align-items-start justify-content-center gap-2 mt-lg-2">
+              <strong class="fs-5">Computação e sensores:</strong>
+              <p class="m-0 fs-6">
+                O grupo de Computação e Sensores é responsável pela parte eletrônica do projeto, incluindo a
+                programação dos sensores, instalação de equipamentos e análise de dados meteorológicos. Entre suas
+                atividades, destacam-se a perfuração do poço, o teste da bomba submersível e a instalação de painéis
+                solares.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-2" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="d-flex flex-column align-items-start justify-content-center gap-2">
+              <strong class="fs-5">Dimensionamento:</strong>
+              <p class="m-0 fs-6">
+                Este grupo projeta e define os equipamentos utilizados no bombeamento e na energia solar, otimizando o
+                aproveitamento hídrico. Entre suas atividades, estão o dimensionamento das placas fotovoltaicas e
+                bombas, além da pesquisa e controle da erva daninha 'Tiririquinha' por meio da técnica mulching.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-2" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="d-flex flex-column align-items-start justify-content-center gap-2">
+              <strong class="fs-5">Dimensionamento:</strong>
+              <p class="m-0 fs-6">
+                O grupo de Extensão conecta o projeto aos alunos da escola técnica, ministrando aulas sobre temas como
+                Arduino, preparo do solo e pesticidas. Também participou do capinamento e demarcação da área de
+                plantio, além de discutir soluções para o problema da erva daninha 'Tiririquinha'.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- End section Equipe  -->
+
+  <!-- Section Contact Start -->
+  <section class="section-contacts d-flex align-items-center justify-content-center overflow-hidden" id="contacts">
+    <div class="container py-5">
+      <div class="row row-gap-5 px-3 px-lg-5 d-flex align-items-center">
+        <div class="col-lg-6">
+          <div class="w-100 d-flex flex-column align-items-start justify-content-center">
+            <div class="d-flex flex-column align-items-start justify-content-center">
+              <p class="m-0 fs-6 subtitle">- Contatos</p>
+              <h1 class="fw-bold fs-2">Entre em Contato Conosco</h1>
+              <p class="fs-6">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium assumenda exercitationem expedita,
+                a laboriosam beatae, temporibus voluptatum est sequi optio id, laborum obcaecati rerum aliquid
+              </p>
+            </div>
+
+            <div
+              class="d-flex flex-column flex-xl-row align-items-start align-items-xl-center justify-content-lg-around gap-2 gap-xl-5 mt-3">
+              <div class="d-flex align-items-center justify-content-start">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                  <i class="bi bi-telephone-plus fs-2 subtitle"></i>
+                  <div class="d-flex flex-column">
+                    <p class="m-0 fw-semibold">Telefone:</p>
+                    <a class="text-decoration-none text-black" href="tel:+552221414031" rel="noopener noreferrer">
+                      (22) 2141-4031
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-start">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                  <i class="bi bi-envelope-arrow-up fs-2 subtitle"></i>
+                  <div class="d-flex flex-column">
+                    <p class="m-0 fw-semibold">Email:</p>
+                    <a class="text-decoration-none text-black"
+                      href="mailto:contato@wcirrigasol.com.br">contato@wcirrigasol.com.br</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div
+              class="d-flex flex-column flex-xl-row align-items-start align-items-xl-center justify-content-lg-around gap-1 gap-xl-5 mt-3">
+              <div class="d-flex align-items-center justify-content-start">
+                <div class="d-flex align-items-center justify-content-center gap-2">
+                  <i class="bi bi-whatsapp fs-2 subtitle"></i>
+                  <div class="d-flex flex-column">
+                    <p class="m-0 fw-semibold">Whatsapp:</p>
+                    <a class="text-decoration-none text-black" href="https://api.whatsapp.com/send?phone=5521998875260"
+                      target="_blank" rel="noopener noreferrer">
+                      (21) 99887-5260
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-start">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                  <i class="bi bi-geo-alt fs-2 subtitle"></i>
+                  <div class="d-flex flex-column">
+                    <p class="m-0 fw-semibold">Local:</p>
+                    <a class="text-decoration-none text-black" href="#" target="_blank">Macaé/RJ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+
+          <form class="row" action="">
+            <div class="mb-3 col-md-6">
+              <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+              <input type="text" class="form-control shadow-none" id="exampleFormControlInput1" placeholder="Nome">
+            </div>
+            <div class="mb-3 col-md-6">
+              <label for="exampleFormControlInput1" class="form-label">Telefone:</label>
+              <input type="tel" class="form-control shadow-none" id="exampleFormControlInput1"
+                placeholder="22 22222-2222">
+            </div>
+            <div class=" mb-3 col-12">
+              <label for="exampleFormControlInput1" class="form-label">Email:</label>
+              <input type="email" class="form-control shadow-none" id="exampleFormControlInput1"
+                placeholder="name@example.com">
+            </div>
+            <div class="mb-3 col-12">
+              <label for="exampleFormControlTextarea1" class="form-label">Assunto:</label>
+              <textarea class="form-control shadow-none" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Assunto..."></textarea>
+            </div>
+
+            <div class="col-3">
+              <button type="submit" class="btn btn-outline-primary btn-about">Enviar</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section Contact End -->
+
+  <footer class="footer mt-5">
+    <div class="container py-2">
+      <div class="d-flex align-items-center justify-content-between flex-wrap">
+        <p class="m-0 fw-semibold">Irrigasol 2025 Todos os Direitos Reservados</p>
+        <p class="m-0 fw-semibold">Feito por: <a class="text-decoration-none text-white ms-1" href="#" target="_blank"
+            rel="noopener noreferrer">Weslei França</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

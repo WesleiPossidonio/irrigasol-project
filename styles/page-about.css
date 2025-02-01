@@ -1,0 +1,188 @@
+* {
+  font-family: "Montserrat", serif;
+}
+
+/* start Hero Image */
+.hero {
+  height: 25rem;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    filter: Brightness(55%);;
+  }
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+
+  }
+}
+
+@media(max-width: 768px){
+  .hero {
+    div {
+      left: 35%;
+  
+    }
+  }
+}
+
+@media(max-width: 540px){
+  .hero {
+    div {
+      left: 30%;
+  
+    }
+  }
+}
+
+
+@media(max-width: 430px){
+  .hero {
+    div {
+      left: 22%;
+  
+    }
+  }
+}
+
+@media(max-width: 375px){
+  .hero {
+    div {
+      left: 20%;
+  
+    }
+  }
+}
+/* end Hero Image */
+
+/* Start Section About  */
+.section-about, .section-equipe {
+  height: auto;
+  min-height: 35rem;
+  margin-bottom: 5rem;
+}
+
+.container-image, .container-image-equipe {
+  background-color: #f86400;
+  padding: 2rem 1.2rem 0 0;
+  border-radius: 8px;
+  
+  img {
+    width: 100%;
+    margin: 0 0 -2rem -1rem;
+    border-radius: 8px;
+  }
+}
+
+@media(max-width: 564px){
+  .container-image, .container-image-equipe {
+    width: min(30rem, 80vw) !important;
+    margin-left: min(3rem, 8vw);
+    img {
+      width: 100%;
+      margin: 0 0 -1rem -1rem;
+      border-radius: 8px;
+    }
+  }
+}
+
+/* start timeline */
+.container-timeline {
+  background-color: #f86400;
+  min-height: 30rem;
+}
+
+.timeline {
+  position: relative;
+  padding: 50px 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #000;
+  transform: translateX(-50%);
+}
+
+.timeline-step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-step:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.timeline-content {
+  width: 50%;
+  padding: 0.625rem 1.25rem;
+}
+
+.timeline-number {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #242323;
+}
+
+.timeline-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.timeline-text {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.timeline-icon {
+  width: 3.75rem;
+  height: 3.75rem;
+  background: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  color: #f86400;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 7rem;
+  }
+  .timeline-step {
+      flex-direction: column !important;
+      align-items: flex-start;
+  }
+  .timeline-content {
+      width: 100%;
+      text-align: left !important;
+      padding-left: 10rem;
+  }
+  .timeline-icon {
+      left: 20px;
+      transform: translateX(0);
+  }
+}
+
+/* End timeline */
+
+/* Start Section Equipe */

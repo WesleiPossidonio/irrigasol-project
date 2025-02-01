@@ -1,0 +1,354 @@
+* {
+  font-family: "Montserrat", serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+ 
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+
+/* Header Start */
+.bg-custom {
+  transition: color 0.3s ease;
+}
+.logo img {
+  width: 3.5rem;
+}
+
+.logo-mobile img {
+  width: 4rem;
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.text-nav-link:hover a{
+  color: #f86400 !important;
+}
+
+
+/* Start Hero Banner  */
+.swiperHero {
+  width: 100%;
+  height: 100svh;
+}
+
+.swiperHero-slide  {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: relative;
+
+  text-align: center;
+  font-size: 18px;
+}
+
+.swiperHero-slide img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  filter: Brightness(35%);
+  z-index: 1px !important;
+}
+
+.title-banner {
+  max-width: 75%;
+  font-size: min(3.4rem, 7vw) !important;
+}
+
+.animated-title {
+  animation: fadeInDown 2s ease forwards;
+}
+
+.animated-subtitle {
+  animation: fadeInUp 2s ease forwards;
+}
+
+/* Animações */
+@keyframes fadeInDown {
+  0% {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@media(max-width: 600px){
+  .title-banner {
+    max-width: 95%;
+  }
+  
+}
+/* End Hero Banner  */
+
+/* Start About Section */
+.container-about {
+  min-height: 40rem;
+}
+
+.content-image-about {
+  position: relative;
+}
+
+.box-text {
+  width: min(11rem, 42vw);
+  height: min(9rem, 20svh);
+  padding: 1rem;
+  border-radius: 8px;
+
+  position: absolute;
+  left: 4rem;
+  bottom: -3.3rem;
+  background-color: #f86400;
+  
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.content-image {
+  width: min(20rem, 75vw);
+  background-color: #f86400;
+  padding: 1.3rem 0.5rem 0 0;
+  border-radius: 4px;
+}
+
+.imageAbout {
+  width: 100%;
+
+  margin-bottom:-1rem;
+  margin-left: -1rem;
+ 
+  object-fit: cover;
+  border-radius: 4px;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.subtitle-about, .subtitle {
+  color: #f86400 !important;
+}
+
+.btn-about {
+  border: 2px solid;
+  border-color: #f86400;
+  color: #f86400;
+  transition: ease 0.3s;
+}
+
+.btn-about:hover {
+  border-color: #f86400;
+  background-color: #f86400 !important;
+  color: #fff ;
+}
+
+@media(max-width: 670px){
+  .box-text {
+    left: 2rem;
+    bottom: -3.3rem;
+  }
+  
+}
+
+@media(max-width: 500px){
+  .box-text {
+    left: -0.5rem;
+    bottom: -3.3rem;
+  }
+  
+}
+/* End About Section */
+
+/* Section Apoiadores Start */
+.section-supporters {
+  height: auto;
+  min-height: 25rem;
+  background-color: #f9f9f9;
+}
+
+.box-image {
+  width: 100%;
+  height: 10rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  padding: 1rem;
+
+  img {
+    width: 9rem;
+    mix-blend-mode: multiply;
+ }
+  
+}
+/* Section Apoiadores End */
+
+/* Section Realizações Start  */
+.section-achievements {
+  height: auto;
+  min-height: auto;
+  background-color: #ffffff;
+  padding: 4rem 0 !important;
+}
+
+.heigth-box {
+  min-height: 20rem !important;
+  max-height: 20rem !important; 
+  height: 20rem !important;
+}
+
+.card-achievements {
+  background-color: #f86400 !important;
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.header-achievements-box {
+  h3 {
+    font-size: 1rem;
+    padding: 0.3rem 1.5rem;
+    border-radius: 4px;
+    background-color: #000;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.img-achivements {
+ border-radius: 12px;
+}
+/* Section Realiações end */
+
+/* Section instalações físicas Start */
+.section-physical-facilities {
+  height: auto;
+  min-height: 40rem;
+  background-color: #f9f9f9;
+  padding: 1rem;
+}
+
+.swiperCards, .swiper-objectives {
+  width: 100%;
+  padding: 2rem;
+}
+
+.card-swiper {
+  width: 22rem !important;
+  height: 20rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 4rem;
+  border-radius: 12px;
+
+  text-align: center;
+  background-color: #f86400;
+
+  position: relative;
+  transition: 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px !important; 
+}
+
+.card-swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card-swiper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1); /* Escurece a imagem (50% de opacidade) */
+  z-index: 1; /* Certifica-se de que está acima da imagem */
+  border-radius: 12px;
+}
+
+
+.card-swiper::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background:  #f86400 !important;
+  transition: height 0.3s ease;
+  z-index: 2;
+  border-radius: 0  0 12px 12px;
+}
+
+.card-swiper:hover::before {
+  height: 23%; /* Expande até metade do card no hover */
+}
+
+.card-swiper img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  filter: Brightness(65%);
+  border-radius: 8px;
+}
+
+.text-physical-facilities {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 3;
+}
+/* Section instalações físicas End */
+
+/* Section Contact */
+.section-contacts {
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+}
+/* End Section Contact */
+
+/* Footer Start */
+.footer {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #f86400;
+}
