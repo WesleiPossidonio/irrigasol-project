@@ -165,6 +165,10 @@ html {
   color: #fff ;
 }
 
+.btn-about:active {
+  border-color: #f86400 !important;
+}
+
 @media(max-width: 670px){
   .box-text {
     left: 2rem;
